@@ -1,0 +1,13 @@
+<p>third works!</p>
+<h1>{{Datel.getSeconds()}}</h1>
+<hr>
+<div class="row">
+    <div class="col-3">
+        <ul>
+            <li *ngFor="let item of items">{{item}}</li>
+        </ul>
+    </div>
+    <div class="col-9">
+        <app-fourth (newItemEvent)="addItem($event)"></app-fourth>
+    </div>
+</div>
